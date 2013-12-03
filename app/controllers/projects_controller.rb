@@ -9,10 +9,12 @@ class ProjectsController < ApplicationController
 	def create
 	end
 
-	def destroy
+	def show
 	end
 
-	def show
+# private
+	
+	def destroy
 	end
 
 	def edit
