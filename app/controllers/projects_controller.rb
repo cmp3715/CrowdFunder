@@ -8,6 +8,12 @@ class ProjectsController < ApplicationController
 	end
 
 	def create
+		@project = Project.new
+		if @project.save
+			redirect_to project_url(@project)
+		else
+			render :new
+		end
 	end
 
 	def show
