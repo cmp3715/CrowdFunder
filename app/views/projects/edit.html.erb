@@ -1,1 +1,6 @@
-<!-- edit page needs params[@project.id] must be in the path to work -->
+<h1>Edit and existing project!</h1>
+<hr>
+
+<%= render partial: 'form', locals: { project: @project } %>
+<hr>
+<%= link_to 'Back', projects_url %>

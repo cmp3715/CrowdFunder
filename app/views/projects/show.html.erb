@@ -1,12 +1,10 @@
-<h1><%= @project.title%></h1>
-<hr>
-<br/>
-	<div >
-		<%= @project.description %> <br/>
-		<%= @project.picture_url %> <br/>
-		<%= @project.funding_goal %> <br/>
-		<%= @project.end_date %> <br/>
-	</div>
+<div >
+	<h1><%= @project.title%></h1><br/>
+	<img src="<%=@project.picture_url%>"/> <br/> <br/>
+	<%= @project.description %> <br/>
+	<%= @project.funding_goal %> <br/>
+	<%= @project.end_date %> <br/>
+</div>
 
 
 
