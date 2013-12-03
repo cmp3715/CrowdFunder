@@ -1,7 +1,7 @@
 CrowdFunder::Application.routes.draw do
 
   resources :users, :except => [:update, :index]
-
+  resources :projects
 
 
   # The priority is based upon order of creation: first created -> highest priority.
