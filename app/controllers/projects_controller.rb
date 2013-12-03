@@ -8,7 +8,7 @@ class ProjectsController < ApplicationController
 	end
 
 	def create
-		@project = Project.new
+		@project = Project.new(project_params)
 		if @project.save
 			redirect_to project_url(@project)
 		else
@@ -33,6 +33,6 @@ class ProjectsController < ApplicationController
   private
 
 	def project_params
-	params.require(:project).permit(:title, :description, :picture, :financial_goal)  	
+	params.require(:project).permit(:title, :description, :picture, :funding_goal)  	
 	end
 end

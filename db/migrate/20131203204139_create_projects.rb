@@ -4,7 +4,7 @@ class CreateProjects < ActiveRecord::Migration
 		t.column :title, :string
 		t.column :description, :text
 		t.column :picture_url, :string
-		t.column :funding_goal_in_months, :integer
+		t.column :funding_goal, :integer
 		t.column :end_date, :date 
 		t.timestamps
     end

@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20131203204139) do
     t.string   "title"
     t.text     "description"
     t.string   "picture_url"
-    t.integer  "funding_goal_in_months"
+    t.integer  "funding_goal"
     t.date     "end_date"
     t.datetime "created_at"
     t.datetime "updated_at"
